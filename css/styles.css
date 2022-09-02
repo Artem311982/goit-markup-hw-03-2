@@ -1,3 +1,7 @@
+html {
+    box-sizing: border-box;
+}
+
 :root {
 /* Fonts */
 --main-font: "Roboto", sans-serif;
@@ -15,13 +19,41 @@
 --other-bg-cl: #2F303A;
 /* Other */
 --other-color-wight: #FFFFFF;
+--outline: 1px solid red;
 }
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* reset */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+.outline {outline: var(--outline);}
 
 .page {
     font-family: var(--main-font);
     font-size: 14px;
     color: var(--main-txt-cl);
     letter-spacing: 0.03em;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 
@@ -59,6 +91,12 @@
 
 .header {
     background-color: var(--other-color-wight);
+}
+
+.contaner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
 }
 
 .header .group-link {
@@ -122,10 +160,23 @@ text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
     
-    color: var(--other-color-wight);
+color: var(--other-color-wight);
+margin: 30px;
 }
 
 .hero-btn {
+    /* button */
+    /* position: absolute; */
+    min-width: 216px;
+    height: 50px;
+    left: 692px;
+    top: 430px;
+
+    background:var(--accent-bg-cl);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    
+    /* button-text */    
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -134,8 +185,8 @@ text-transform: uppercase;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    background: var(--accent-bg-cl);
     color: var(--other-color-wight);
+    padding: 10px 32px;
 }
 
 .footer {
@@ -159,10 +210,9 @@ text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
-
     letter-spacing: 0.03em;
-
     color: var(--main-txt-cl);
+    margin-bottom: 10px;
 }
 
 .title-three-in-our {
