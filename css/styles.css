@@ -20,7 +20,6 @@ html {
 --btn-bg-cl: #F5F4FA;
 /* Other */
 --other-color-wight: #FFFFFF;
---outline: 1px solid red;
 }
 
 *,
@@ -57,8 +56,6 @@ img {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-
-.outline {outline: var(--outline);}
 
 .page {
     width: 1600px;
@@ -113,12 +110,12 @@ img {
 }
 
 .logo {
-    display: block;
     font-family: 'Raleway';
     text-decoration: none;
     font-size: 26px;
     font-weight: 700;
     line-height: calc(31 / 26);
+    margin-right: 93px;
 
     letter-spacing: 0.03em;
 
@@ -133,13 +130,19 @@ img {
     display: flex;
 }
 
-
-
 .header-list .link {
     display: block;
     margin-right: 50px;
     padding-top: 32px;
     padding-bottom: 32px;
+    margin-left: auto;
+}
+
+.list-btn-portfolio {
+    display: flex; 
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 34px;
 }
 
 .header-list .list-item:last-child {
@@ -190,6 +193,12 @@ img {
     background-color: var(--accent-bg-cl);
 }
 
+.list-projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
 .contaner {
     margin-left: auto;
     margin-right: auto;
@@ -198,6 +207,7 @@ img {
 
 .group {
     display: flex;
+    margin-left: auto;
 }
 
 .group > .link {
@@ -227,10 +237,15 @@ img {
 }
 
 .hero-title {
+    display: block;
+
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
     line-height: calc(60 / 44);
+    margin-top: 200px;
+    margin-bottom: 280px;
+    padding: 0;
 
     text-align: center;
     letter-spacing: 0.06em;
@@ -241,11 +256,12 @@ img {
 
 .hero-btn {
     /* button */
-    /* position: absolute; */
+    position: absolute;
     min-width: 216px;
     height: 50px;
     left: 692px;
     top: 430px;
+    margin-top: 30px;
 
     background:var(--accent-bg-cl);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -267,8 +283,9 @@ img {
     color: var(--other-color-wight);
 }
 
-.feirst-box-in {
+.feirst-list {
     display: flex;
+    gap: 30px;
 }
 
 .title-three-in-benefits {
@@ -283,19 +300,33 @@ img {
     color: var(--main-txt-cl);
 }
 
-.second-box-in {
+.second-list {
     display: flex;
+    gap: 30px;
 }
 
-.third-box-in {
+.third-list {
     display: flex;
+    gap: 30px;
 }
+
+.list-shadow {
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+}
+
+.our-team {
+    background: var(--btn-bg-cl);
+}
+
 .title-two-in {
 
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42 / 36);
+    margin-bottom: 50px;
 
+    text-align: center;
     letter-spacing: 0.03em;
 
     color: var(--main-txt-cl);
@@ -305,8 +336,10 @@ img {
     font-weight: 500;
     font-size: 16px;
     line-height: calc(19 / 16);
+    margin-top: 30px;
     margin-bottom: 10px;
 
+    text-align: center;
     letter-spacing: 0.03em;
 
     color: var(--main-txt-cl);
@@ -341,6 +374,7 @@ img {
     line-height: calc(19 / 16);
     padding-bottom: 30px;
 
+    text-align: center;
     letter-spacing: 0.03em;
 
     color: var(--par-txt-cl);
