@@ -130,12 +130,19 @@ img {
     display: flex;
 }
 
+.header-list .list-item {
+    margin-right: 50px;
+    margin-left: auto;
+}
+
 .header-list .link {
     display: block;
-    margin-right: 50px;
     padding-top: 32px;
     padding-bottom: 32px;
-    margin-left: auto;
+}
+
+.header-list .list-item:last-child {
+    margin-right: 0;
 }
 
 .list-btn-portfolio {
@@ -143,10 +150,6 @@ img {
     justify-content: center;
     gap: 8px;
     margin-bottom: 34px;
-}
-
-.header-list .list-item:last-child {
-    margin-right: 0;
 }
 
 .list-item-btn {
@@ -203,6 +206,8 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .group {
@@ -234,18 +239,22 @@ img {
 .hero {
     background-color: var(--other-bg-cl);
     width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-title {
     display: block;
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
 
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
     line-height: calc(60 / 44);
-    margin-top: 200px;
-    margin-bottom: 280px;
-    padding: 0;
+    
 
     text-align: center;
     letter-spacing: 0.06em;
@@ -256,7 +265,7 @@ img {
 
 .hero-btn {
     /* button */
-    position: absolute;
+    /* position: absolute; */
     min-width: 216px;
     height: 50px;
     left: 692px;
@@ -311,12 +320,17 @@ img {
 }
 
 .list-shadow {
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .our-team {
     background: var(--btn-bg-cl);
+}
+
+.our-projects {
+    padding-top: 0;
 }
 
 .title-two-in {
@@ -372,7 +386,7 @@ border-radius: 0px 0px 4px 4px;
     font-weight: 400;
     font-size: 16px;
     line-height: calc(19 / 16);
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 
     text-align: center;
     letter-spacing: 0.03em;
@@ -394,6 +408,11 @@ border-radius: 0px 0px 4px 4px;
 .footer {
     background-color: var(--other-bg-cl);
     color: var(--other-color-wight);
+}
+
+.footer-block {
+        padding-top: 60px;
+        padding-bottom: 60px;
 }
 
 .logo-footer {
