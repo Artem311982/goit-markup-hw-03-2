@@ -149,7 +149,6 @@ img {
     display: flex; 
     justify-content: center;
     gap: 8px;
-    margin-bottom: 34px;
 }
 
 .list-item-btn {
@@ -161,6 +160,7 @@ img {
     top: 174px;
     border: 0;
     border-radius: 4px;
+    margin-bottom: 50px;
     
     /* button-text */
     font-style: normal;
@@ -265,12 +265,11 @@ img {
 
 .hero-btn {
     /* button */
-    /* position: absolute; */
+    position: absolute;
     min-width: 216px;
     height: 50px;
     left: 692px;
     top: 430px;
-    margin-top: 30px;
 
     background:var(--accent-bg-cl);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -359,13 +358,20 @@ img {
     color: var(--main-txt-cl);
 }
 
-.title-two-portfolio {
+.list-box-projects {
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px;
 
+    /* margin: 20px 24px; */
+}
+
+.title-two-portfolio {
     font-weight: 700;
     font-size: 18px;
     line-height: calc(36 / 18);
-    margin-top: 20px;
-    margin-bottom: 4px;
+    padding-bottom: 4px;
 
     letter-spacing: 0.06em;
 
@@ -398,7 +404,6 @@ img {
     font-weight: 400;
     font-size: 16px;
     line-height: calc(30 / 16);
-    margin-bottom: 20px;
     
     letter-spacing: 0.03em;
  
@@ -406,18 +411,25 @@ img {
 }
 
 .footer {
+    width: 1600px;
+    height: 252px;
+    left: 0px;
+    top: 2094px;
+
     background-color: var(--other-bg-cl);
     color: var(--other-color-wight);
 }
 
 .footer-block {
-        padding-top: 60px;
-        padding-bottom: 60px;
+    padding-top: 60px;
+    /* padding-bottom: 60px; */
 }
 
 .logo-footer {
+    display: block;
     text-decoration: none;
     color: var(--other-color-wight);
+    margin-bottom: 20px;
 }
 
 .par-footer .link {
@@ -441,6 +453,15 @@ img {
     color: rgba(255, 255, 255, 0.6);
 }
 
-address {
+.address {
     font-style: normal;
+}
+
+.address .par-footer {
+    font-style: normal;
+    padding-bottom: 9px;
+}
+
+.list .list-item {
+    padding-bottom: 9px;
 }
